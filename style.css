@@ -34,3 +34,14 @@ h1, h2 {
     font-size: 18px;
     color: #FFCF2C;
 }
+
+.add-to-cart {
+    margin-top: 10px; /* Espacio arriba del botón */
+    padding: 10px 20px; /* Aumento del padding */
+    background-color: #4CAF50; /* Cambio de color de botón a verde */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px; /* Aumento del radio de borde */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave de color */
+}
