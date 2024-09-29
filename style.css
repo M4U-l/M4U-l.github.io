@@ -45,3 +45,7 @@ h1, h2 {
     cursor: pointer;
     transition: background-color 0.3s ease; /* Transición suave de color */
 }
+
+.add-to-cart:hover {
+    background-color: #45A049; /* Color de botón en hover */
+}
