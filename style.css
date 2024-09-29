@@ -62,3 +62,27 @@ h1, h2 {
 .cart-item {
     margin-bottom: 10px; /* Aumento del espacio entre ítems */
 }
+
+.cart-item {
+    margin-bottom: 10px; /* Aumento del espacio entre ítems */
+}
+
+#checkout-btn {
+    display: block;
+    margin: 30px auto; /* Aumento del espacio entre el carrito y el botón */
+    padding: 15px 30px; /* Aumento del padding del botón */
+    background-color: #FF5722; /* Cambio de color de botón a naranja */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px; /* Aumento del radio de borde */
+    cursor: pointer;
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+    transition: background-color 0.3s ease; /* Transición suave de color */
+}
+
+#checkout-btn:hover {
+    background-color: #FF6D4C; /* Color de botón en hover */
+}
