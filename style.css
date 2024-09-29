@@ -6,3 +6,15 @@ body {
     color: #FFFFFF; /* Cambio de color de texto a blanco */
     padding: 20px;
 }
+
+h1, h2 {
+    text-align: center;
+    color: #FFCF2C; /* Cambio de color de título a amarillo */
+}
+
+#product-list {
+    display: flex; /* Cambio a flexbox */
+    flex-wrap: wrap; /* Envolver productos en varias filas */
+    justify-content: center; /* Centrar productos horizontalmente */
+    gap: 20px; /* Espacio entre productos */
+}
