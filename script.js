@@ -54,3 +54,10 @@ function addToCart(productId) {
         default:
             return;
     }
+    let existingItem = cart.find(item => item.name === product.name);
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        product.quantity = 1;
+        cart.push(product);
+    }
