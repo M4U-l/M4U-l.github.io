@@ -84,3 +84,4 @@ function updateCart() {
             <button onclick="removeItem(${index})">Eliminar</button>`;
         cartDiv.appendChild(cartItemDiv);
     });
+}
