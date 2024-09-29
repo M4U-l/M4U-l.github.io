@@ -73,3 +73,14 @@ function removeItem(index) {
     }
     updateCart();
 }
+
+function updateCart() {
+    const cartDiv = document.getElementById('cart');
+    cartDiv.innerHTML = '';
+    cart.forEach((item, index) => {
+        const cartItemDiv = document.createElement('div');
+        cartItemDiv.classList.add('cart-item');
+        cartItemDiv.innerHTML = `${item.name} - $${item.price} x ${item.quantity}
+            <button onclick="removeItem(${index})">Eliminar</button>`;
+        cartDiv.appendChild(cartItemDiv);
+    });
