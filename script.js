@@ -99,3 +99,11 @@ function checkout() {
     
     window.open(whatsappLink, '_blank');
 }
+
+function calculateTotal() {
+    let total = 0;
+    cart.forEach(item => {
+        total += item.price * item.quantity;
+    });
+    return total;
+}
