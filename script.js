@@ -64,3 +64,12 @@ function addToCart(productId) {
 
     updateCart();
 }
+
+function removeItem(index) {
+    if (cart[index].quantity > 1) {
+        cart[index].quantity--;
+    } else {
+        cart.splice(index, 1);
+    }
+    updateCart();
+}
