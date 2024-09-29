@@ -18,3 +18,13 @@ h1, h2 {
     justify-content: center; /* Centrar productos horizontalmente */
     gap: 20px; /* Espacio entre productos */
 }
+
+.product {
+    flex: 0 0 calc(25% - 20px); /* Tamaño de cada producto (25% - espacio entre productos) */
+    margin: 10px; /* Margen para espaciar los productos */
+    padding: 20px;
+    background-color: #3E3E3E;
+    border-radius: 10px; /* Aumento del radio de borde */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+    text-align: center;
+}
