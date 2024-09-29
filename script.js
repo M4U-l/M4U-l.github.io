@@ -85,3 +85,17 @@ function updateCart() {
         cartDiv.appendChild(cartItemDiv);
     });
 }
+
+function checkout() {
+    let message = "Pedido:\n";
+    cart.forEach(item => {
+        message += `${item.name} - $${item.price} x ${item.quantity}\n`;
+    });
+    message += `\nTotal: $${calculateTotal()}\n\nGracias por su compra!`;
+
+    const whatsappNumber = "3207908572";
+    const messageEncoded = encodeURIComponent(message);
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${messageEncoded}`;
+    
+    window.open(whatsappLink, '_blank');
+}
